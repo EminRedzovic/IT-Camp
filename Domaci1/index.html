@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .screen{
+        height: 60vh;
+        margin-left: 260px;
+        margin-right: 260px;
+        border: 1.4px solid wheat;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+    .Pikachu{
+        background-image: url("/Slike/Pikachu.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 90px;
+        border-radius: 5px;
+    }
+    .Raichu{
+        background-image: url("/Slike/Raichu.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 90px;
+        border-radius: 5px;
+    }
+    .Arbok{
+        background-image: url("/Slike/Arbok.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 90px;
+        border-radius: 5px;
+    }
+    .Ekans{
+        background-image: url("/Slike/Ekans.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 90px;
+        border-radius: 5px;
+    }
+    .Fearow{
+        background-image: url("/Slike/Fearow.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 90px;
+        border-radius: 5px;
+    }
+    .Spearow{
+        background-image: url("/Slike/Spearow.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 90px;
+        border-radius: 5px;
+    }
+    #button{
+        border: 0.3px solid black;
+        margin-right: 15px;
+    }
+    .container div{
+        display: inline;
+    }
+    body{
+        background-image: url("/Slike/Wallpaper.jpg");
+        background-size: cover;
+    }
+    .slika{
+        width: 100%;
+        height: 100%;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    #Pik,#Rai,#Arb,#Eka,#Fea,#Spe{
+        font-weight: bold;
+        border: 0.3px solid black;
+        margin-right: 15px;
+    }
+    .clearr{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .clear{
+        border: 0.5px solid black;
+        width: 170px;
+        height: 40px;
+        border-radius: 5px;
+        transition: 0.7s;
+    }
+    .clear:hover{
+        width: 180px;
+        height: 45px;
+        border: 0.7px solid black;
+        transition: 0.7s;
+        background-color: gainsboro;
+    }
+    #texta{
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-size: 25px;
+    }
+</style>
+<body>
+    <div class="screen" id="nek">
+        <div class="slika">
+        <img id="Br" src=" " alt="">
+    </div>
+    </div>
+    </div>
+    <div id="texta"> 
+        <p id="textt">Name:</p>
+    </div>
+    <div class="clearr">
+    <button class="clear" id="cler">Clear</button></div>
+    <div class="container d-flex justify-content-center">
+    <div class="row">
+    <div id="buttons">
+        <div class="col-xl-3">
+            <button id="Pik" class="Pikachu">Pikachu</button>
+            <button id="Rai" class="Raichu">Raichu</button></div>
+        <div class="col-xl-3">
+            <button id="Arb" class="Arbok">Arbok</button>
+            <button id="Eka" class="Ekans">Ekans</button>
+        </div>
+        <div class="col-xl-3">
+            <button id="Fea" class="Fearow">Fearow</button>
+            <button id="Spe" class="Spearow">Spearow</button>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+            document.getElementById('Pik').addEventListener("click", function(){
+                document.getElementById('Br').src = "/Slike/Pikachuu.png"
+                document.getElementById('textt').innerHTML = "Name:Pikachu";
+        });
+        document.getElementById('Rai').addEventListener("click", function(){
+                document.getElementById('Br').src = "/Slike/Raichuu.png"
+                document.getElementById('textt').innerHTML = "Name:Raichu";
+        });
+        document.getElementById('Arb').addEventListener("click", function(){
+                document.getElementById('Br').src = "/Slike/Arbokk.png"
+                document.getElementById('textt').innerHTML = "Name:Arbok";
+        });
+        document.getElementById('Eka').addEventListener("click", function(){
+                document.getElementById('Br').src = "/Slike/Ekanss.png"
+                document.getElementById('textt').innerHTML = "Name:Ekans";
+        });
+        document.getElementById('Fea').addEventListener("click", function(){
+                document.getElementById('Br').src = "/Slike/Fearoww.png"
+                document.getElementById('textt').innerHTML = "Name:Fearow";
+        });
+        document.getElementById('Spe').addEventListener("click", function(){
+                document.getElementById('Br').src = "/Slike/Spearoww.png"
+                document.getElementById('textt').innerHTML = "Name:Spearow";
+        });
+        document.getElementById('cler').addEventListener("click", function(){
+                document.getElementById('Br').src = " "
+                document.getElementById('textt').innerHTML = "Name:";
+        });
+</script>
+</body>
+</html>
