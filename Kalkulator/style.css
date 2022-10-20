@@ -1,0 +1,86 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.pre{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+.calculator{
+    width: 400px;
+    height: 480px;
+    border: 2px solid #dbdad7;
+    
+    /* display: flex;
+    flex-direction: column; */
+}
+#display{
+    margin: 15px;
+    height: 60px;
+    border: 1px solid #edebe6;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.first,.second,.third,.fourth,.fifth{
+    display: flex;
+    justify-content: space-between;
+}
+.numbers{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 270px;
+    height: 380px;
+
+}
+.equal{
+    margin-right: 15px;
+    float: right;
+    width: 95px;
+    height:380px;
+
+}
+.calculator .numbers button{
+    width: 80px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid #edebe6;
+    font-size: 25px;
+}
+#deljenje{
+    width: 80px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: #e3e3e3;
+    border: none;
+}
+#plus{
+    background-color: #e3e3e3;
+    border: none;
+}
+#minus{
+    background-color: #e3e3e3;
+    border: none;
+}
+#puta{
+    background-color: #e3e3e3;
+    border: none;
+}
+#jednako{
+    width: 80px;
+    height: 260px;
+    margin-left: 15px;
+    margin-top: 20px;
+    background-color: #77caed;
+    border: none;
+    font-size: 35px;
+}
+#displ{
+    font-weight: bold;
+    padding-right: 25px;
+    font-size: 25px;
+}
