@@ -16,4 +16,9 @@ document.getElementById('Calculate').addEventListener('click',function(){
     document.getElementById('FiveThree').textContent = c;
     document.getElementById('Five').textContent = d;
     document.getElementById('Three').textContent = e;
+    a=undefined;
+    b=undefined;
+    c=0;
+    d=0;
+    e=0;
 })
