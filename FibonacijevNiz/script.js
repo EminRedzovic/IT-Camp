@@ -10,7 +10,10 @@ for(i=2;i<20;i++){
 }
 
 for(var y=0;y< FibonacijevNiz.length;y++){
-    if(FibonacijevNiz[y]%3==0){
+    if(FibonacijevNiz[y]==0){
+
+    }
+    else if(FibonacijevNiz[y]%3==0){
         c=c+1
         console.log("Broj",FibonacijevNiz[y],"je deljiv sa 3")
     }
