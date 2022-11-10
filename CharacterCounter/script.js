@@ -8,9 +8,6 @@ for(i=0;i<=niz.length-1;i++){
     if(niz[i]!==" " && niz[i]!=="," && niz[i]!=="." && niz[i]!=="!"){
         filtriraniNiz.push(niz[i])
     }
-    else{
-
-    }
 }
 
 console.log("Uneti text ima ",filtriraniNiz.length,"slova, ",niz.length,"karaktera, ",reci.length,"reci, ",recenice.length,"recenica")
